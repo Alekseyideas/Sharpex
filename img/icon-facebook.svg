@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.47" height="26.531" viewBox="0 0 26.47 26.531">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Facebook_logo_in_circular_button_outlined_social_symbol" data-name="Facebook logo in circular button outlined social symbol" class="cls-1" d="M1457.46,31.267a13.23,13.23,0,1,0-13.23,13.265A13.245,13.245,0,0,0,1457.46,31.267Zm-25.26,0a12.03,12.03,0,1,1,12.03,12.059A12.047,12.047,0,0,1,1432.2,31.267Zm12.54,7.656V31.267h2.52l0.4-2.538h-2.92V27.457a1.094,1.094,0,0,1,1.16-1.294h1.9V23.631h-2.69c-2.26,0-2.88,1.493-2.88,3.563v1.535h-1.55v2.538h1.55v7.656h2.51Z" transform="translate(-1431 -18)"/>
+</svg>

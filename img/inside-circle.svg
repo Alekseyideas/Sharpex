@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a9da28;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Tick_inside_circle" data-name="Tick inside circle" class="cls-1" d="M700.8,158.2L698,161l9,9,20-20-2.8-2.8L707,164.4ZM725,162a16,16,0,1,1-16-16,15.6,15.6,0,0,1,4.4.6l3.2-3.2A24.342,24.342,0,0,0,709,142a20,20,0,1,0,20,20h-4Z" transform="translate(-689 -142)"/>
+</svg>

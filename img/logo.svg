@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="176" height="29" viewBox="0 0 176 29">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 16px;
+        fill: #2b2a2a;
+        font-family: "Proxima Nova";
+      }
+
+      .cls-2 {
+        fill: #accb00;
+      }
+    </style>
+  </defs>
+  <text id="SHARPEX" class="cls-1" transform="translate(-1.207 28.4) scale(2.537)">SHARP<tspan class="cls-2">EX</tspan></text>
+</svg>
