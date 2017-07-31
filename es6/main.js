@@ -5,13 +5,42 @@ $('.categories').find('li').each(function () {
 $('#top-slides').owlCarousel({
     items: 1
 });
-$('#all-carousel').owlCarousel({
-    items: 4,
-    loop: true,
-    nav: true,
-    navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
-});
 
+
+$(` #all-carousel,
+    #sharpeners-carousel,
+    #sharpening-carousel,
+    #polishing-carousel,
+    #accessories-carousel
+`).owlCarousel({
+    loop: true,
+    navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+    responsiveClass:true,
+    responsive : {
+        // breakpoint from 0 up
+        0 : {
+            items: 1,
+        },
+        // breakpoint from 480 up
+        480 : {
+            items: 1,
+        },
+        // breakpoint from 768 up
+        600 : {
+            items: 2,
+        },
+        992 : {
+            items: 3,
+        },
+        1070: {
+            nav: false,
+        },
+        1200 : {
+            items: 4,
+            nav: true,
+        }
+    }
+});
 let tab = $('.tab');
 
 let active_tab = $('.tab.active').data('tab');

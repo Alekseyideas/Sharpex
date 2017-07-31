@@ -400,7 +400,7 @@ header {
   display: none; }
 
 .wr-product {
-  margin-top: 30px;
+  margin: 30px auto 0;
   max-width: 270px;
   background: white;
   position: relative; }
@@ -474,7 +474,7 @@ header {
     text-decoration: underline; }
 
 .wr-price-buy {
-  padding: 0 20px;
+  padding: 20px;
   bottom: 10px;
   left: 0;
   width: 100%;
@@ -521,6 +521,16 @@ header {
     margin: 5px; }
   .enter-shop {
     margin: 0; } }
+
+@media only screen and (max-width: 650px) {
+  .s-tabs {
+    float: left;
+    margin-top: 20px; }
+    .s-tabs ul li {
+      font-size: 10px;
+      margin-left: 5px; }
+      .s-tabs ul li:first-child {
+        margin-left: 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -591,6 +601,7 @@ header {
     height: 80px;
     overflow: hidden; }
   .wr-price-buy {
+    padding: 0 20px;
     position: absolute; } }
 
 /* Medium Devices, Desktops */
