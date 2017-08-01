@@ -76,14 +76,22 @@ header
   a
     color: $dark-blue
 
+body.modal-open
+  overflow-y: hidden !important
+  height: 100%
+
 
 .enter-shop
   display: block
   margin-top: 10px
+  background: none
+  border: 0
+  box-shadow: none
   i
     color: lighten(black,70)
     margin-right: 5px
-
+  &:hover
+    color: $green
 .middle-head
   padding: 50px 0
 .main-logo
@@ -1193,4 +1201,550 @@ header
         margin-right: 10px
 
   margin-bottom: 250px
+
+.question-answer
+  margin-bottom: 40px
+  .title
+    text-transform: uppercase
+    color: $green
+    font-size: 24px
+    font-weight: bold
+  .wr-toggle
+    padding: 30px 0
+    border-bottom: 1px solid rgba(#687076,.2)
+    &:last-child
+      border-bottom: 0
+    &.active
+      .question
+        color: $green
+        &:before
+          content: '\f068'
+
+  .question
+    font-size: 14px
+    color: $dark-blue
+    cursor: pointer
+    display: flex
+    &:hover
+      color: $green
+    &:before
+      content: '\f067'
+      font-family: FontAwesome
+      font-size: 14px
+      margin-right: 40px
+      font-weight: 300
+      display: inline-block
+  .toggle-content
+    margin-top: 30px
+    color: #687076
+    font-size: 14px
+    line-height: 28px
+    padding-left: 50px
+
+
+
+
+.toggle-content
+  display: none
+
+.toggle-title
+  cursor: pointer
+
+.table-product
+  width: 100%
+  margin-bottom: 27px
+  .t-image
+    width: 15%
+    text-align: left
+    img
+      width: 100%
+      max-width: 117px
+      height: auto
+  .t-name
+    width: 33%
+    font-size: 14px
+    color: $dark-blue
+  .t-price
+    width: 17%
+    font-size: 14px
+    color: $dark-blue
+  .t-count
+    width: 14%
+  .t-total
+    width: 15%
+    font-size: 14px
+    color: $dark-blue
+    font-weight: bold
+  .t-delete
+    width: 6%
+    color: red
+    button
+      background: none
+      box-shadow: none
+      &:hover,
+      &:focus
+        color: darken(red,20)
+
+  td
+    padding: 20px 0
+    text-align: center
+
+  tr
+    &:first-child
+      td
+        border-bottom: 1px solid rgba(#b5b7c3,.5)
+        color: #b5b7c3
+        font-size: 14px
+      .t-total
+        font-weight: normal
+  tr
+    &:last-child
+      td
+        border-bottom: 1px solid rgba(#b5b7c3,.5)
+
+
+  .input-val
+    max-width: 100px
+    position: relative
+    margin: auto
+    input
+      outline: 0
+      width: 100%
+      height: 49px
+      text-align: center
+      -webkit-appearance: none
+      background: #eaeaea
+      color: $dark-blue
+      border-radius: 3px
+      box-shadow: none
+      border: 0
+
+    .btn-plus-min
+      position: absolute
+      height: 50%
+      right: 0
+      font-size: 14px
+      border: 0
+      background: #eaeaea
+      color: $dark-blue
+      &:hover
+        color: $green
+    .plus
+      top: 0
+      i
+        line-height: 10px
+        position: absolute
+        right: 7px
+        bottom: 0
+    .min
+      bottom: 0
+      i
+        line-height: 10px
+        position: absolute
+        right: 7px
+        top: 0
+.checkout
+  margin-bottom: 50px
+  .wr-price
+    font-size: 24px
+    font-weight: bold
+    .total-text
+      color: $dark-blue
+      font-weight: normal
+      font-size: 14px
+      margin-right: 10px
+.btn-checkout
+  margin-top: 50px
+  a
+    background: #f6550e
+    color: white
+    text-transform: uppercase
+    box-shadow: inset 0 -4px 0 #b56209
+    padding: 15px 40px
+    transition: .2s
+    &:hover
+      background: darken(#f6550e,10)
+.recommended-in-product
+  margin-bottom: 50px
+.cart-registration
+  border: 1px solid $green
+  padding: 30px
+  span,a
+    font-size: 14px
+  span
+    color: #62646c
+  a
+    color: #252634
+    font-weight: 500
+    &:hover
+      color: $green
+.step-2
+  margin: 10px 0
+  .indention-m
+    margin: 40px 0 0
+  .call-back
+    color: $green
+  .alert-massage
+    color: #ff0066
+
+  .help-block
+    color: #404040
+    font-size: 16px
+    a
+      color: #404040
+      font-size: 16px
+      text-decoration: underline
+      &:hover
+        color: $green
+
+  input,textarea
+    padding: 10px
+    border-radius: 0
+    outline: 0 !important
+    border: 1px solid #e3e3e3
+    font-size: 16px
+    color: #afafaf
+    box-shadow: none
+    &::placeholder
+      font-size: 16px
+      color: #afafaf
+    &:focus
+      box-shadow: 0 0 10px rgba(#b7b7b8,.25)
+      border: 1px solid #e3e3e3
+
+  h2
+    margin-top: 40px
+    display: flex
+    align-items: center
+    color: $green
+    font-size: 23px
+    &:before
+      display: block
+      background: #7ba50c
+      border-radius: 50%
+      width: 34px
+      height: 34px
+      color: white
+      text-align: center
+      line-height: 34px
+      margin-left: -60px
+      margin-right: 28px
+  .wr-c-info
+    &.active
+      h2
+        &:before
+          background: #a9da28
+.wr-c-contact-info
+  padding-left: 60px
+  h2
+    &:before
+      content: '1'
+.wr-c-delivery-info
+  padding-left: 60px
+  img
+    margin: 10px 0 20px
+  h2
+    &:before
+      content: '2'
+.wr-c-payment-info
+  padding-left: 60px
+  h2
+    &:before
+      content: '3'
+#checkout-comment
+  width: 100%
+  display: none
+  margin: 40px 0 0 60px
+#add-comment
+  font-size: 20px
+  text-decoration: underline
+  text-transform: uppercase
+  margin: 40px 0 0 60px
+
+#inputCity
+  max-width: 248px
+#inputDepartment
+  max-width: 128px
+.full-width
+  width: 100%
+.right-ordered
+  td
+    font-size: 14px
+    padding: 20px 0
+  .c-pr-order
+    width: 6%
+  .c-pr-img
+    width: 18%
+    img
+      max-width: 80px
+      width: 100%
+      height: auto
+  .c-pr-name
+    width: 48%
+  .c-pr-count
+    width: 12%
+  .c-pr-total-price
+    font-weight: bold
+.block-your-order
+  background: white
+  padding: 30px 30px 60px
+  h4
+    font-size: 24px
+    color: $dark-blue
+.status-success
+  h1
+    font-size: 43px
+    color: #a9da28
+  h3
+    color: #62646c
+    font-size: 24px
+#status-text
+  border-bottom: 1px solid rgba(#b5b7c3,.5)
+  padding-bottom: 50px
+
+
+.t-title
+  text-transform: uppercase
+  font-size: 16px
+  color: $dark-blue
+.t-value
+  color: #8a8c98
+  margin-bottom: 30px
+  display: block
+.continue
+  background: $green
+  box-shadow: inset 0 -3px 0 #5e7c0e
+  color: white
+  text-transform: uppercase
+  font-size: 14px
+  border-radius: 0px
+  padding: 10px 40px
+  margin: 50px 0
+  &:hover
+    background: darken($green,10)
+    color: white
+.status-order
+  p
+    color: #62646c
+    font-size: 14px
+    line-height: 28px
+.order-success
+  .price
+    color: #a9da28
+    font-size: 24px
+    font-weight: bold
+    .total-text
+      color: #252634
+      font-size: 14px
+      font-weight: normal
+
+.modal-lg
+  max-width: 770px
+.modal-body
+  padding: 15px 70px
+#registration
+  .modal-title
+    text-transform: uppercase
+    color: $green
+    font-size: 19px
+    margin-top: 20px
+  .modal-header
+    border-bottom: 0
+  .has-error
+    input
+      border: 1px solid red !important
+
+  .form-group
+    max-width: 220px
+    margin-left: auto
+    margin-right: auto
+    width: 100%
+    input
+      background: #fafafa
+      border: 1px solid #e3e3e3
+      color: #afafaf
+      box-shadow: none
+      height: 44px
+      border-radius: 0
+      width: 100%
+      box-sizing: border-box
+      &::placeholder
+        color: #afafaf
+      &:focus
+        box-shadow: 0 10px 13px #cccccc
+
+#p-sign-in
+  padding-top: 15px
+  form
+    button
+      background: #a9da28
+      color: #637f18
+      font-size: 15px
+      box-shadow: inset 0 -3px 0 #688912
+      text-transform: uppercase
+      font-weight: bold
+      border-radius: 0
+      padding: 10px 30px
+      margin-top: 15px
+  img
+    width: 100%
+    max-width: 161px
+    margin-bottom: 9px
+  .btns-soc
+    width: 220px
+    height: 42px
+    color: white
+    margin-bottom: 20px
+    position: relative
+    font-size: 13px
+    font-family: 'Open Sans', sans-serif
+    padding-left: 50px
+    transition: .2s
+    span
+      position: absolute
+      left: 0
+      top: 0
+      line-height: 42px
+      width: 45px
+      height: 100%
+      background: rgba(black,.2)
+      font-size: 17px
+
+    b
+      font-size: 17px
+
+#btn-facebook
+  background:  #3d5b96
+  &:hover
+    background: darken(#3d5b96,10)
+#btn-google
+  background:  #ec2b1d
+  &:hover
+    background: darken(#ec2b1d,10)
+#btn-vk
+  background:  #80a7c9
+  &:hover
+    background: darken(#80a7c9,10)
+#p-registration
+  h4
+    color: #747373
+    text-transform: uppercase
+    margin-bottom: 60px
+  .btn
+    background: #f6550e
+    color: white
+    font-size: 15px
+    font-weight: bold
+    box-shadow: inset 0 -5px 0 #b56209
+    margin: 20px auto
+    padding: 10px 30px
+    border-radius: 0
+
+#r-inputPasswordConfirm
+  margin-top: 15px
+
+
+#forget-pass-link,.lav
+  color: #747373
+  font-size: 14px
+  font-family: 'Open Sans', sans-serif
+  font-weight: normal
+  &:hover
+    color: white
+.product-modal
+  .modal-content
+    padding: 50px 40px
+  .bnt-close
+    margin-top: -35px
+    margin-right: -20px
+
+
+.cur-product-top
+  border-top: 1px dashed   rgba(#747373,.4)
+  border-bottom: 1px dashed   rgba(#747373,.4)
+  padding-top: 20px
+  padding-bottom: 20px
+  .wr-price
+    font-size: 25px
+    font-weight: bold
+    .price
+      color: #ec2b1d
+  .img-suc
+    vertical-align: top
+  .wr-pr-image
+    width: 175px
+    height: 175px
+    overflow: hidden
+    position: relative
+    margin: auto
+    img
+      position: absolute
+      top: 0
+      left: 0
+      min-height: 100%
+      width: auto
+.m-pr-title
+  color: #f38078
+  text-transform: uppercase
+  font-size: 18px
+  max-width: 300px
+  font-family: 'Open Sans', sans-serif
+  margin: 0 0 20px 0
+  span
+    color: black
+    text-transform: initial
+
+.m-checkout,
+.m-continue
+  margin-top: 20px
+  display: block
+  text-transform: uppercase
+  font-size: 14px
+  font-family: 'Open Sans', sans-serif
+  transition: .2s
+.m-checkout
+  background: #f6550e
+  color: white
+  &:hover
+    color: white
+    background: darken(#f6550e,10)
+.m-continue
+  background: #dddddd
+  color: #747373
+  width: 100%
+  &:hover
+    color: white
+    background: darken(#dddddd,10)
+.wr-add-t0-order
+  margin-top: 20px
+  max-width: 146px
+.a-o-image
+  width: 146px
+  height: 114px
+  overflow: hidden
+  position: relative
+  img
+    position: absolute
+    left: 0
+    top: 0
+    min-width: 100%
+    height: 100%
+.a-o-info
+  color: #56585a
+  font-size: 14px
+  margin: 20px 0
+.a-o-price
+  .wr-price
+    font-size: 25px
+    .price
+      color: #ec2b1d
+.add-to-order
+  margin-bottom: 10px
+  input
+    margin-top: 5px
+  label
+    font-size: 16px
+    color: #8a8c98
+    font-weight: normal
+
 @import "media"

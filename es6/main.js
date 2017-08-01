@@ -1,3 +1,4 @@
+let isMobile = (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Windows Phone/i.test(navigator.userAgent));
 
 $('.page-catalog').find('#slider').remove();
 let cat_menu = $('.page-catalog #wrapper-categories').html();
@@ -189,12 +190,75 @@ $('.block-select').click(function () {
 });
 
 
+$('.toggle-title').click(function () {
+    $(this).closest('.wr-toggle').toggleClass('active');
+    $(this).closest('.wr-toggle').find('.toggle-content').slideToggle();
 
+});
 
+$('#add-comment').click(function (e) {
+    e.preventDefault();
+    $(this).hide();
+    $('#checkout-comment').show();
+
+})
+$('.step-2 input').focusin(function () {
+   $(this).parents('.wr-c-info').addClass('active');
+});
+$('.step-2 input').focusout(function () {
+   $('.wr-c-info').removeClass('active');
+});
 /*Delete this links*/
-$('.categories>li> a').attr('href','catalog.php');
-$('.nav-item:nth-child(3) a').attr('href','about-company.php');
-$('.nav-item:nth-child(5) a').attr('href','delivery.php');
-$('.nav-item:nth-child(9) a').attr('href','news.php');
-$('.nav-item:nth-child(11) a').attr('href','contacts.php');
-$('.link-info-product,.categories .has-submenu ul li a,#top-slides .learn-more').attr('href','product.php');
+$(document).ready(function () {
+    $('.categories>li> a').attr('href','catalog.php');
+    $('.nav-item:nth-child(3) a').attr('href','about-company.php');
+    $('.nav-item:nth-child(5) a').attr('href','delivery.php');
+    $('.nav-item:nth-child(7) a').attr('href','question-answer.php');
+    $('.nav-item:nth-child(9) a').attr('href','news.php');
+    $('.nav-item:nth-child(11) a').attr('href','contacts.php');
+    $('.main-cart').attr('href','cart.php');
+    $('.btn-checkout a').attr('href','checkout.php');
+    $('.step-2 .btn-checkout a').attr('href','processed-order.php');
+    $('.link-info-product,.categories .has-submenu ul li a,#top-slides .learn-more').attr('href','product.php');
+});
+
+
+
+if ($('body').hasClass('modal-open')){
+    alert(1);
+}
+
+
+$('.enter-shop').click(function () {
+    $('#registration').modal({
+        show: true
+    });
+});
+
+$('.modal').on('shown.bs.modal', function() {
+    $('html').css('overflow-y','hidden')
+});
+$('.modal').on('hidden.bs.modal', function() {
+    $('html').css('overflow-y','auto')
+});
+
+$('.btn-buy').click(function () {
+    $('.product-modal').modal({
+        show: true
+    });
+});
+
+if (isMobile){
+    $('.mobile-bar').bind('click',function () {
+        $('#main-menu').css({
+            'left': '0'
+        });
+        $('html').css('overflow-y','hidden');
+    });
+    $('.mobile-close-menu').bind('click',function () {
+        $('#main-menu').css({
+            'left': '100%'
+        });
+        $('html').css('overflow-y','auto');
+    });
+}

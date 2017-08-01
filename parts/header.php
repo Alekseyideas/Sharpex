@@ -40,10 +40,10 @@
                 <div class="col-xs-6">
                     <ul class="list-unstyled">
                         <li class="pull-right">
-                            <a href="#" class="enter-shop">
+                            <button href="#" class="enter-shop">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 Sign in
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -101,8 +101,11 @@
                             <button class=" btn btn-lg mobile-bar"><i class="fa fa-bars" aria-hidden="true"></i></button>
                         </div>
                     </div>
-                    <div class="hidden-sm hidden-xs">
+                    <div class="" id="main-menu">
                         <ul class="flex-row list-unstyled flex-j-between flex-a-center ">
+                            <li class="m-cat hidden-md hidden-lg text-right orange-block">
+                                <button class="btn mobile-close-menu"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            </li>
                           <li class="nav-item">
                               <a class="nav-link active" href="/">Main</a>
                           </li>
@@ -110,36 +113,76 @@
                               <span class="pol">|</span>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="#">About</a>
+                              <a class="nav-link" href="about-company.php">About</a>
                           </li>
                           <li>
                               <span class="pol">|</span>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="#">Payment and delivery</a>
+                              <a class="nav-link" href="delivery.php">Payment and delivery</a>
                           </li>
                           <li>
                               <span class="pol">|</span>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link disabled" href="#">Question-answer
+                              <a class="nav-link disabled" href="question-answer.php">Question-answer
                               </a>
                           </li>
                           <li>
                               <span class="pol">|</span>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link disabled" href="#">News
+                              <a class="nav-link disabled" href="news.php">News
                               </a>
                           </li>
                           <li>
                               <span class="pol">|</span>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link disabled" href="#">Contacts
+                              <a class="nav-link disabled" href="contacts.php">Contacts
                               </a>
                           </li>
-                      </ul>
+                           <li class="m-cat hidden-md hidden-lg">
+                               <a href="catalog.php">Sharpeners</a>
+                           </li>
+                            <li class="m-cat hidden-md hidden-lg">
+                                <a href="catalog.php">Sharpening</a>
+                            </li>
+                            <li class="m-cat hidden-md hidden-lg">
+                                <a href="catalog.php">Polishing</a>
+                            </li>
+                            <li class="m-cat hidden-md hidden-lg">
+                                <a href="catalog.php">Accessories</a>
+                            </li>
+                            <li class="m-cat hidden-md hidden-lg">
+                                <a href="catalog.php">Knives</a>
+                            </li>
+                            <li class="m-cat hidden-md hidden-lg">
+                                <a href="catalog.php">Additional category</a>
+                            </li>
+                            <li class="m-cat hidden-md hidden-lg">
+                                <a href="catalog.php">New category</a>
+                            </li>
+                            <li class="m-cat hidden-md hidden-lg">
+                                <a href="catalog.php">Outlet items</a>
+                            </li>
+                            <li class="m-cat hidden-md hidden-lg">
+                                <form action="" class="top-search">
+
+                                        <div class="input-group">
+                                            <input type="text" value="" name="search" class="form-control input-lg" placeholder="Search...">
+
+                                            <span class="input-group-btn">
+                                    <button class="btn btn-default btn-lg">
+                                    <i class="fa fa-search"></i></button>
+                                </span>
+
+                                        </div>
+
+                                </form>
+                            </li>
+
+                        </ul>
                     </div>
 
                 </div>

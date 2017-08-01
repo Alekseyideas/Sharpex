@@ -9,6 +9,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
+  .cur-product-top
+    .wr-pr-image
+      margin: 0
   #wrapper-categories
     display: none
   .not-main
@@ -29,14 +32,48 @@
         float: none
         text-align: center
         width: 100%
+  #main-menu
+    left: 100%
+    position: fixed
+    background: rgba(0, 0, 0, 0.9)
+    color: white
+    width: 100%
+    height: 100%
+    top: 0
+    transition: .3s
+    z-index: 99999
+    overflow: auto
+    padding-bottom: 40px
+    form
+      margin-top: 20px
+      padding: 0 30px
+    .flex-row
+      display: block
+      .pol
+        display: none
+      li
+        a
+          color: white
+          display: block
+          padding: 30px
+          border-bottom: 1px solid rgba(white,.5)
+
+  .mobile-close-menu
+    margin: 10px 30px
+    background: none
+    font-size: 25px
 
 
+  .orange-block
+    background: $orange
 
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
-
+  .wr-add-t0-order
+    margin: auto
+    margin-top: 30px
 
   body
     font-size: 14px
@@ -78,6 +115,8 @@
     a
       line-height: 45px
 @media only screen and (max-width : 650px)
+  .modal-body
+    padding: 15px 10px
   .s-tabs
     float: left
     margin-top: 20px
@@ -102,6 +141,39 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+
+  .cur-product-top
+    .img-suc
+      margin: auto
+      display: block
+    .wr-pr-image
+      margin: 20px auto
+  .block-your-order
+    padding: 10px 10px 20px
+  .right-ordered
+    .c-pr-img
+      display: none
+  .table-product
+    .t-image
+      display: none
+    td
+      text-align: left
+      font-size: 12px !important
+    .t-name
+      width: 30%
+    .input-val
+      max-width: 45px
+      margin: 0
+      .btn-plus-min
+        display: none
+    .t-total,
+    .t-price
+      span
+        display: block
+    .t-count
+      width: 8%
+    .t-delete
+      width: 4%
   #image-carousel
     .item
       width: 50px

@@ -321,14 +321,14 @@
                                     <div class="wr-price-buy">
                                         <div class="pull-left">
                                             <div class="wr-price">
-                                            <span class="old-price">
-                                                <span class="val">3850</span>
-                                                <span class="currency">UAH</span>
-                                            </span>
-                                                <span class="price">
-                                                <span class="val">3850</span>
-                                                <span class="currency">UAH</span>
-                                            </span>
+                                                <span class="old-price">
+                                                    <span class="val">3850</span>
+                                                    <span class="currency">UAH</span>
+                                                </span>
+                                                    <span class="price">
+                                                    <span class="val">3850</span>
+                                                    <span class="currency">UAH</span>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="pull-right">
