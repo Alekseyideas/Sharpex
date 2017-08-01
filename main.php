@@ -451,11 +451,43 @@
     </div>
 </section>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+<section class="reviews indention">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="s-title pull-left">
+                    Articles and reviews
+                </div>
+            </div>
+        </div>
+
+        <div class="row reviews-blocks">
+
+            <?php
+            $i = 0;
+            while ($i<4){$i++;?>
+                <div class="col-md-3 col-sm-6">
+                    <div class="wr-reviews">
+                        <div class="product-img">
+                            <img src="img/news-<?php echo $i?>.jpg" alt="">
+                        </div>
+                        <div class="title">
+                            <h3>Правильна заточка ножів (як точити ножі)</h3>
+                        </div>
+                        <div class="short-info">
+                            <p>Будь-яка домогосподарка, а вже тим більше кухар знає, що без добре наточеного ножа приготування перетворюється в досить обтяжлива захід. </p>
+                        </div>
+                        <a href="" class="link-review">Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            <?php }?>
+
+
+        </div>
+
+    </div>
+</section>
+
 
 <?php include (dirname(__FILE__).'/parts/footer.php'); ?>

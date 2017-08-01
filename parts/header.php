@@ -11,9 +11,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
-<body>
+
+
+<?php
+    if (stripos($_SERVER['REQUEST_URI'], 'main.php') || $_SERVER['REQUEST_URI'] === '/')
+        $class = 'main-page' ;
+    else if (stripos($_SERVER['REQUEST_URI'], 'catalog.php'))
+        $class = 'page-catalog';
+    else
+        $class = 'not-main';
+?>
+
+<body class="<?php echo $class; ?>">
 <header>
     <div class="top-head">
         <div class="container ">
@@ -92,7 +104,7 @@
                     <div class="hidden-sm hidden-xs">
                         <ul class="flex-row list-unstyled flex-j-between flex-a-center ">
                           <li class="nav-item">
-                              <a class="nav-link active" href="#">Main</a>
+                              <a class="nav-link active" href="/">Main</a>
                           </li>
                           <li>
                               <span class="pol">|</span>

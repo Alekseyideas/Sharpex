@@ -8,12 +8,36 @@
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width : 991px)
+  #wrapper-categories
+    display: none
+  .not-main
+    #wrapper-categories
+      top: -92px
+    .cat-menu
+      max-width: 213px
+    .cat-head
+      line-height: 77px
+      button
+        line-height: 57px
+  .full-product-info
+    .product-name
+      margin-top: 30px
+  .cat-menu-products
+    .wr-pagination
+      .pull-left
+        float: none
+        text-align: center
+        width: 100%
+
+
+
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
+
+
   body
     font-size: 14px
   .middle-head
@@ -25,8 +49,34 @@
       margin: 5px
   .enter-shop
     margin: 0
-
-
+  .icon-mail
+    display: none !important
+  #inputEmail
+    width: 100%
+    max-width: 100%
+  #subscription
+    padding: 30px 0
+  #form-subscription
+    input
+      border-radius: 5px
+    button
+      margin: 10px 0
+    .text
+      text-align: center
+      margin: 0 0 20px
+  #social-links
+    padding: 0
+    text-align: center
+    .pull-right
+      float: none !important
+    a
+      img
+        width: 50px
+        height: auto
+        margin: 0 20px
+  #foot-1
+    a
+      line-height: 45px
 @media only screen and (max-width : 650px)
   .s-tabs
     float: left
@@ -37,14 +87,31 @@
         margin-left: 5px
         &:first-child
           margin-left: 0
-
-
+  #reviews
+    ul
+      li
+        margin-bottom: 40px
+        .user-img
+          width: 50px
+          height: 50px
+        .wr-name-date-text
+          margin-left: 10px
+        ul
+          margin-left: 20px
+          margin-top: 40px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
-
-
+  #image-carousel
+    .item
+      width: 50px
+      height: 50px
+  .full-product-info
+    .bnt-buy
+      display: block
+      margin: 20px 0
+    .wr-price
+      margin: 0
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
   .cart-image
@@ -61,12 +128,18 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px)
-	/**/
+  .full-product-info
+    .tab-content
+      iframe
+        height: 200px
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px)
-	/**/
+  .full-product-info
+    .tab-content
+      iframe
+        height: 300px
 
 @media only screen and (min-width : 600px)
   #top-slides
@@ -84,17 +157,31 @@
         font-size: 16px
       .btn-buy
         font-size: 20px
+  .full-product-info
+    .tab-content
+      iframe
+        height: 300px
+
 /* Small Devices, Tablets */
 
 
 
 @media only screen and (min-width : 768px)
+  .link-news
+    .news-image
+      height: 268px
+  .full-product-info
+  .tab-content
+    iframe
+      height: 500px
+
   #all-carousel
     .wr-product
       margin-top: 0
     .owl-stage-outer
 
       padding: 2% 0
+
 
   .wr-product
     height: 348px
@@ -111,16 +198,35 @@
           opacity: 1
     .product-img
       height: 170px
+
+
+  .wr-reviews
+    transition: .2s
+    .short-info
+      height: 125px
+      overflow: hidden
+      margin-bottom: 20px
+    .link-review
+      &:hover
+        color: darken($green,10)
+        i
+          margin-left: 10px
+
+
   .flex-m-column
     flex-direction: row
   .product-info
     height: 80px
     overflow: hidden
+
   .wr-price-buy
     padding: 0 20px
     position: absolute
+
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
+  .wr-reviews
+    margin: 0 auto
   .flex-t-column
     flex-direction: row
   #slider
@@ -130,5 +236,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
-	/**/
-
+  .full-product-info
+    .tab-content
+      iframe
+        height: 700px
