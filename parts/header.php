@@ -57,7 +57,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-xs-4">
-                    <a href="/" class="main-logo"><img src="img/logo.svg" alt=""></a>
+                    <a href="/" class="main-logo"><img src="img/logo.png" alt="logo"></a>
                 </div>
                 <div class="col-md-7 hidden-sm hidden-xs">
                     <form action="" class="top-search">

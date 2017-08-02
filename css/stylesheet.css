@@ -1946,6 +1946,23 @@ body.modal-open {
     color: #8a8c98;
     font-weight: normal; }
 
+.p-404 h1 {
+  font-size: 215px;
+  color: #637f18;
+  font-weight: bold;
+  margin: 0; }
+
+.p-404 h3 {
+  font-weight: 500;
+  color: #5e5e5e;
+  font-size: 35px;
+  text-transform: uppercase; }
+
+.p-404 p {
+  font-size: 23px;
+  color: #5e5e5e;
+  font-weight: normal; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
